@@ -1,0 +1,131 @@
+<script src="https://kit.fontawesome.com/7b3b228058.js" crossorigin="anonymous"></script>
+
+<section id="header">
+  <div class="header-wrap">
+  <!-- logo section  -->
+    <div class="logo"  > 
+    <a href="{{ routes.root_url  }}"> 
+      
+      T  E  S  L  A
+    </a>
+    </div>
+    <!-- navigation bar-->
+    <div class="navbar">
+   <ul>
+    {% if linklists[settings.navigation_menu] and linklists[settings.navigation_menu].links.size > 0 %}
+      {% for link in linklists[settings.navigation_menu].links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    {% else %}
+      <!-- Default Links -->
+      <li><a href="/vehicles">Vehicles</a></li>
+      <li><a href="/energy">Energy</a></li>
+      <li><a href="/charging">Charging</a></li>
+      <li><a href="/discover">Discover</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/robot">Robot</a></li>
+    {% endif %}
+  </ul>
+    </div>
+    <!-- cart icon -->
+    <div class="cart">
+      <div class="cart1">
+        <a href="{{  }}"> <i class="fa-solid fa-question"></i>  </a>
+      </div>
+      
+      <div class="cart2">
+        
+      <a href="{{  }}"><i class="fa-solid fa-earth-americas"></i> </a>
+      </div>
+      <div class="cart3">
+        <a href=" {{  }}"><i class="fa-regular fa-user"></i> </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schema -->
+{% schema %}
+  
+{
+  "name": "Header Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo Text",
+      "default": "T  E  S  L  A"
+    }
+    , {
+    "type":"link_list",
+    "id":"navigation_menu",
+      "label":"Navigation Menu",
+    "default":"main-menu",
+      
+    }
+  
+  ]
+  
+}
+{% endschema %}
+
+
+<!-- style -->
+
+
+<!-- style -->{% style %}
+  .header-wrap{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:10px 20px;
+    
+   }
+  .navbar ul{
+    display:flex;
+    justify-content:space-between;
+    align-item:center;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul li{
+    padding:15px;
+   text-underline:none;
+  }
+  .header-wrap .cart{
+    display:flex;
+    justify-content:space-between;
+    }
+  .header-wrap .cart .cart1 a {
+     color:white;
+    margin-right:15px;
+     font-size:20px;
+    text-decoration: none;
+  }
+  .header-wrap .cart .cart2 a {
+     color:white;
+    margin-right:15px;
+     font-size:20px;
+    text-decoration: none;
+  }
+  .header-wrap .cart .cart3 a {
+    color:white;
+    margin-right:10px;
+     font-size:20px;
+    text-decoration: none;
+  }
+ .header-wrap .logo a{
+    color:white;
+     font-size:26px;
+   margin-left:25px;
+    font-weight:600;
+    text-decoration: none;
+  }
+  .header-wrap .navbar ul li a{
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    text-decoration: none;
+  }
+{% endstyle %}

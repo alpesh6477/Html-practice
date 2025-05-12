@@ -1,0 +1,1387 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Default CSS */
+* {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+html,
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway", sans-serif;
+	/*font-family: "Montserrat", sans-serif;
+	font-family: "Poppins", sans-serif;*/
+	font-size: 16px;
+	color: #000000;
+	font-weight: 600;
+}
+.bg {
+}
+a,
+a:hover {
+	text-decoration: none;
+	transition: all ease 0.5s
+}
+/*custom css*/
+.bg-primary {
+	background-color: #FFC0CB !important
+}
+.bg-light {
+	background-color: #EDF3F9 !important;
+}
+.bg-lblue {
+	background-color: #ACC5E3 !important;
+}
+.bg-dblue {
+	background-color: #0069DC !important;
+}
+.bg-secondary {
+	background-color: #FFFBF2 !important
+}
+.bg-black {
+	background-color: #000000 !important
+}
+.bg-grey {
+	background-color: #1B1B1D !important
+}
+.text-primary {
+	color: #FFC0CB !important
+}
+.text-secondary {
+	color: #5A85B3 !important
+}
+.text-muted {
+	color: #868686 !important
+}
+.text-black {
+	color: #000000 !important
+}
+.text-black-link a {
+	color: #000000;
+}
+.heading-lg {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 82px;
+	letter-spacing: 2px;
+}
+.heading-xsm {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: "Raleway", sans-serif;
+}
+.heading-xxsm {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 1.5;
+}
+.heading-xxxsm {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 1
+}
+.heading-sm {
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 60px;
+	font-family: "Montserrat", sans-serif;
+}
+h6.hgroup {
+	font-size: 13px;
+	font-weight: bold
+}
+.card-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 20px;
+}
+.card-text {
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 16px;
+}
+.card-text-lg {
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 20px;
+}
+.font-weight-bold {
+	font-weight: 800 !important;
+}
+.font-weight-lbold {
+	font-weight: 600 !important
+}
+section.space-py,
+.space-py {
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+ul.social {
+	margin: 0px;
+	padding: 0px;
+}
+ul.social li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 16px;
+}
+ul.social li a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 54px;
+  height: 54px;
+  display: flex;
+  border-radius: 50rem;
+  background-color: #ffffff20;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+ul.social li a img {
+	width: 20px;
+	height: 20px;
+}
+.btn {
+	border: 1px solid transparent;
+	padding: 20px 40px;
+	font-size: 18px;
+	border-radius: 6px;
+	line-height: 1;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase
+}
+.btn-primary {
+	color: #000;
+	background-color: #FFC0CB;
+	border-color: #FFC0CB;
+	box-shadow: 8px 8px 0 rgba(255,255,255,0.20);
+}
+.btn-primary:hover {
+	color: #FFC0CB;
+	background-color: #000;
+	border-color: #000;
+}
+.btn-light {
+	color: #FFC0CB;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+.btn-light:hover {
+	color: #fff !important;
+	background-color: #0A0A0A;
+	border-color: #0A0A0A;
+}
+.btn-default {
+	color: #000;
+	background-color: #ffffff;
+	border-color: #ffffff;
+	box-shadow: 8px 8px 0 rgba(255,255,255,0.20);
+}
+.btn-default:hover {
+	color: #fff;
+	background-color: #000000;
+	border-color: #000000;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+	color: #000;
+	background-color: #FFC0CB;
+	border-color: #FFC0CB;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+	color: #000;
+	background-color: #FFC0CB;
+	border-color: #FFC0CB;
+	box-shadow: 8px 8px 0 rgba(255,255,255,0.20);
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+.btn-default:not(:disabled):not(.disabled).active:focus,
+.btn-default:not(:disabled):not(.disabled):active:focus,
+.show>.btn-default.dropdown-toggle:focus {
+	box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+	box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+	color: #000;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer;
+	outline: none;
+}
+.button-block > .btn {
+	margin-right: 20px;
+}
+.text {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 500;
+}
+.text-xs {
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.2px;
+	font-weight: normal;
+}
+.modal .btn-close {
+	box-sizing: content-box;
+	width: 1em;
+	height: 1em;
+	padding: .25em .25em;
+	color: #000;
+	background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+	border: 0;
+ border-radius: .25rem;
+	opacity: .5;
+	cursor: pointer;
+	outline: none
+}
+.container-fluid.px-5 {
+	padding-left: 100px !important;
+	padding-right: 100px !important
+}
+.container {
+	max-width: 1700px;
+}
+/* Header section css start */
+.header-short-top {
+	padding: 10px 0
+}
+.header-main-sec {
+	margin: 0px;
+	padding: 20px 0;
+	/*position: absolute;
+	z-index: 9999;*/
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #010101;
+}
+.header-main-sec .header-logo img {
+	width: 317px;
+	height: auto
+}
+.header-main-sec .navbar-nav .nav-link {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header-main-block .navbar-nav .nav-link::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	transition: all ease-in-out .5s;
+	margin: 0;
+}
+.header-main-block .navbar-nav .nav-link:hover::before {
+	width: 0;
+	transition: all ease-in-out .5s;
+}
+.header-main-block .navbar-nav .nav-link {
+	position: relative;
+}
+.header-main-sec .navbar-nav {
+	margin: 0;
+}
+.header-main-sec .navbar-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.header-main-sec .navbar-nav ul li {
+	list-style-type: none;
+}
+.header-main-sec .navbar-nav .nav-link img {
+	height: 30px;
+	vertical-align: middle
+}
+.header-main-sec .navbar-nav .nav-link.active,
+.header-main-sec .navbar-nav .nav-link.active:hover,
+.header-main-sec .navbar-nav .nav-link:hover {
+	color: #FFC0CB;
+}
+.header-main-sec .navbar .navbar-toggler-icon,
+.header-main-sec .navbar .icon-bar {
+	color: #FFF;
+}
+.header-right-area {
+/*padding: 20px 0;
+	border-bottom: 1px solid #ffffff10*/
+}
+.header-right-area .header-right-info .header-right-info-block:not(:last-child) {
+	margin-right: 10px;
+}
+.header-right-area .header-right-info .header-right-info-block a {
+	font-size: 18px;
+	font-weight: 500;
+	color: #ffffff
+}
+.header-right-area .header-right-info .icon-sm {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	border-radius: 50rem;
+	background-color: #ffffff15;
+	text-align: center;
+	margin-right: 10px;
+}
+.header-main-sec .navbar button {
+	margin-left: auto;
+	outline: none !important;
+	background: transparent;
+	border: none;
+}
+.navbar {
+	/*position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	border: none;*/
+	padding: 0
+}
+.header-main-sec .header-main-block .header-right-info {
+	gap: 50px
+}
+.header-main-sec .header-main-block .header-right-info .header-contact {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.header-main-sec .header-main-block .header-right-info .header-contact img {
+	margin-right: 10px;
+}
+/* Header section css end */
+
+/*hero section css*/
+.hero-area {
+	margin: 0;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	min-height: 850px;
+	display: flex;
+	align-items: center;
+}
+.hero-area .hero-content-area {
+	margin: 0px;
+}
+.hero-area .hero-content-area .hero-content-block {
+	margin: 0px;
+}
+.hero-area .hero-content-area .hero-content-block p {
+	max-width: 675px;
+}
+/*hero section css end*/
+.home-product-area {
+	margin: 0
+}
+.home-product-area .home-product-space {
+}
+.pink-bg-top {
+	position: relative
+}
+.pink-bg-top:before {
+	content: "";
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/product-top-bg.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 152px;
+	display: inline-block;
+	position: absolute;
+	z-index: 0;
+	top: -150px;
+	left: 0
+}
+.home-product-area .home-product-block {
+	margin: 0
+}
+.home-product-area .home-product-block .home-product-block-list {
+	margin: 0
+}
+.home-product-area .home-product-block .home-product-block-list .home-product-block-list-img {
+	margin: 0
+}
+.home-product-area .home-product-block .home-product-block-list .home-product-block-list-info h4 {
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+.font-mont {
+	font-family: "Montserrat", sans-serif;
+}
+.font-weight-semibold {
+	font-weight: 600 !important
+}
+/*about section css*/
+.about-area {
+	margin: 0
+}
+.about-area .about-area-left {
+	margin: 0
+}
+.about-area .about-area-right {
+	margin: 0
+}
+.about-area .about-area-right .about-area-right-info {
+	padding: 80px;
+}
+.form-contact .form-control {
+	display: block;
+	background-color: #ffffff10;
+	height: auto;
+	padding: 18px 30px;
+	color: #fff;
+	border: none;
+	border-radius: 50rem;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 1;
+	font-family: "Kumbh Sans", sans-serif;
+	min-height: 60px;
+}
+.form-contact textarea.form-control {
+	border-radius: 30px;
+	resize: none;
+	height: 150px;
+}
+.form-contact .form-control::placeholder {
+ color: #ffffff;
+ opacity:1
+}
+.form-contact .form-control:focus {
+	outline: none;
+	box-shadow: none
+}
+.form-contact .form-group {
+	margin-bottom: 10px;
+}
+/*footer css*/	
+.footer-area {
+	padding: 100px 0 0;
+	color: #ffffff;
+	position:relative
+}
+.footer-area .container { }
+.footer-area:after { content:""; background-image:url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/footer-bg.png); background-position:center right; background-repeat:no-repeat; background-size:contain; width:284px; height:187px; position:absolute; z-index:0; right:30px; bottom:30px; }
+.footer-logo img {
+	width: 210px;
+	height: auto
+}
+.footer-area .footer-block-content-area {
+	margin: 30px 0
+}
+.footer-area .footer-top-area {
+	border-top: 1px solid #ffffff20;
+		border-bottom: 1px solid #ffffff20;
+		padding: 40px 0;
+}
+.footer-area ul.footer-nav-links {
+	margin: 0px;
+	padding: 0px;
+}
+.footer-area ul.footer-nav-links li {
+	list-style-type: none;
+	display: block;
+	line-height: 50px;
+}
+.footer-area ul.footer-nav-links li a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ffffff;
+	letter-spacing: 0.5px;
+}
+.footer-area ul.footer-nav-links li a:hover {
+	color: #FFC0CB;
+}
+.footer-area .footer-block-content-area .opening-hrs-area .opening-hrs-block {
+	display: flex;
+	margin: 30px 0 0;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-area .company-info .company-info-block .icon-block-left {
+	width: 54px;
+	height: 54px;
+	display: flex;
+	border-radius: 50rem;
+	background-color: #ffffff20;
+	justify-content: center;
+	margin-right: 13px;
+	align-items: center;
+	flex-shrink: 0;
+}
+.footer-area .company-info .company-info-block .text-block-right .text {
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 14px;
+}
+.footer-area .company-info .company-info-block .text-block-right,
+.footer-area .company-info .company-info-block .text-block-right a {
+	color: #ffffff;
+}
+.footer-area .company-info .company-info-block .text-block-right {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 20px;
+}
+.footer-area .company-info .company-info-block {
+	margin-top: 30px;
+}
+.footer-area .footer-bottom {
+	border-top: 1px solid #ffffff20;
+	padding: 30px 0;
+}
+.footer-area .copyrights {
+    font-weight: 300;
+  font-size: 18px;
+}
+.footer-area .footer-right {
+	text-align: right
+}
+hgroup {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	max-width:610px;
+}
+.contact-area .contact-area-right .gform-theme .gform-body .gfield label,
+.contact-area .contact-area-right .gform-theme .gform-body .gfield_label {
+	display: none
+}
+.contact-area .contact-area-right .gform-theme .gform-body .gform_fields {
+	gap: 20px;
+}
+.contact-area .contact-area-right .gform-theme .gform-body .gfield .large,
+.contact-area .contact-area-right .gform-theme .gform-body .gfield .small,
+.contact-area .contact-area-right .gform-theme .gform-body .gfield input[type="text"] {
+	padding: 26px 30px;
+	background-color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: normal;
+	width: 100%;
+	outline: none;
+	min-height: 80px;
+	border: 2px solid rgba(0, 0, 0, 0.05);
+	box-shadow: none;
+	border-radius: 0px;
+	color: #868686;
+}
+ .contact-area .contact-area-right .gform-theme .gform-body .gfield .large::placeholder, .contact-area .contact-area-right .gform-theme .gform-body .gfield .small::placeholder, .contact-area .contact-area-right .gform-theme .gform-body .gfield input[type="text"]::placeholder {
+ opacity: 1;
+ color: #868686;
+}
+.contact-area .contact-area-right .gform-theme .gform_footer {
+	justify-content: end;
+}
+.contact-area .contact-area-right .gform-theme .gform_footer .button {
+	font-weight: 700 !important;
+	border: 2px solid transparent;
+	padding: 20px 30px !important;
+	font-size: 20px !important;
+	line-height: 20px;
+	outline: none !important;
+	letter-spacing: 0.2px !important;
+	color: #F5E7B0 !important;
+	background-color: #FFC0CB !important;
+	border-color: #FFC0CB;
+	border-radius: 0px !important;
+	text-transform: uppercase !important;
+}
+a.back-to-top {
+	position: fixed;
+	transition: background 0.5s;
+	z-index: 11;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	left: 100px;
+	top: 50%;
+	transform: translateY(-50%);
+	writing-mode: sideways-lr;
+	color: #FFC0CB;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+}
+a:hover.back-to-top {
+}
+a.back-to-top .line-scroll {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+a.back-to-top .line-scroll > span {
+	width: 4px;
+	height: 0px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: height 0.3s ease;
+}
+.footer-area .footer-block-content-area .form-control::placeholder { opacity:1; color:#ffffff; }
+.footer-area .footer-block-content-area .form-control { border:0px; outline:none; background-color:#ffffff20; border-radius:0px; min-height:60px; color:#ffffff; }
+.footer-area .footer-block-content-area .form-control:focus { outline:none; box-shadow:none }
+
+.footer-logo-area { padding-bottom:60px; }
+.footer-logo-area .footer-logo-left { margin:0 }
+.footer-logo-area .footer-logo-right {text-align:right }
+.footer-logo-area .footer-logo-left img {
+	width: 317px;
+	height: auto;
+}
+
+/*gform contact block*/
+.footer-area .footer-block-content-area .gform_heading {
+	display: none
+}
+.footer-area .footer-block-content-area .gform_wrapper {
+	margin-top: 20px;
+}
+.footer-area .footer-block-content-area .ginput_container_email input.large {
+	background-color: #ffffff20 !important;
+	border-radius: 50rem
+}
+.footer-area .footer-block-content-area .gform-theme .gform_footer .button {
+	font-weight: 500 !important;
+	border: 0px solid transparent;
+	padding: 20px 30px !important;
+	font-size: 16px !important;
+	line-height: 16px;
+	outline: none !important;
+	letter-spacing: 0.2px !important;
+	color: #ffffff !important;
+	background-color: #0069DC !important;
+	border-radius: 50rem !important;
+	text-transform: uppercase !important;
+}
+.gform_wrapper .gform_body .gfield {
+	position: relative
+}
+.gform_wrapper .gform_validation_errors {
+	display: none !important;
+}
+.gform_wrapper .gform_body .gfield_error .large,
+.gform_wrapper .gform_body .gfield_error .small,
+.gform_wrapper .gform_body .gfield_error input[type="text"] {
+	border-color: #c51118 !important;
+	background: #fff7f6 !important;
+}
+.gform_wrapper .gform_body .gfield_validation_message {
+	position: absolute;
+	background: #c51118 !important;
+	padding: 8px 20px !important;
+	top: auto;
+	right: 0;
+	font-size: 12px !important;
+	color: #fff !important;
+	z-index: 1;
+	line-height: normal;
+	border-radius: 0.15rem;
+}
+.gform_wrapper .gform_body .gfield_validation_message:before {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #c51118;
+	position: absolute;
+	z-index: 2;
+	left: 10%;
+	top: -5px;
+	content: "";
+}
+.gform_wrapper .gform_confirmation_message {
+	background: #e9f7ed;
+	text-align: center;
+	padding: 10px;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+ border-radius: .25rem;
+}
+ul.list-block {
+	margin: 0px;
+	padding: 0px;
+}
+ul.list-block li {
+	list-style-type: none;
+	display: block;
+	margin: 15px 0;
+	font-size: 18px;
+	line-height: 28px;
+	font-family: "Kumbh Sans", sans-serif;
+	font-weight: normal;
+	color: #9A9EAB;
+	position: relative;
+	padding-left: 35px;
+}
+ul.list-block li:before {
+	content: "\f00c";
+	color: #FFC0CB;
+	font-weight: 900;
+	font-family: "Font Awesome 6 Pro";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 20px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.normal-light-icon svg {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.normal-light-icon {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+}
+.normal-light-icon .hidden {
+	display: none;
+}
+/*popular coffee area*/
+
+.popular-coffee-area {
+	position: relative;
+}
+.popular-coffee-area .popular-coffee-block {
+	margin: 0
+}
+.popular-coffee-area .popular-coffee-block .card-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.stars-group {
+	margin: 0px;
+	padding: 0px;
+}
+.stars-group img {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+}
+.popular-coffee-area .popular-coffee-block .card-shop-btn {
+	position: absolute;
+	z-index: 1;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	transform: translateY(80px);
+	transition: all ease-in-out 0.5s
+}
+.popular-coffee-area .swiper {
+	/*overflow: visible*/
+}
+.popular-coffee-area .swiper-slide:hover .card-shop-btn {
+	transform: translateY(0px);
+}
+.popular-coffee-next,
+.popular-coffee-prev {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border-color: #FFC0CB;
+	border-radius: 50rem;
+	border: 2px solid #FFC0CB;
+	top: 42%;
+}
+.popular-coffee-next:hover:after,
+.popular-coffee-prev:hover:after {
+	background-color: #FFC0CB;
+	border-color: transparent;
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50rem;
+}
+.popular-coffee-prev:after,
+.popular-coffee-next:after {
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-pink.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	font-size: 0;
+	align-items: center;
+	justify-content: center;
+}
+.popular-coffee-next:after {
+	transform: rotate(180deg);
+}
+.popular-coffee-prev {
+	left: 30px;
+}
+.popular-coffee-next {
+	right: 30px;
+}
+.buy-online-coffee-area {
+	margin: 0px;
+}
+.buy-online-coffee-area .buy-online-coffee-block {
+	margin: 0px;
+}
+.buy-online-coffee-area .buy-online-coffee-block .buy-online-coffee-block-left {
+	margin: 0px;
+}
+.buy-online-coffee-area .buy-online-coffee-block .buy-online-coffee-block-left .buy-online-coffee-block-left-img {
+	margin: 0px;
+}
+.buy-online-coffee-area .buy-online-coffee-block .buy-online-coffee-block-right {
+	margin: 0px;
+}
+.buy-online-coffee-area .buy-online-coffee-block .buy-online-coffee-block-right-cont {
+	margin: 0px;
+}
+.buy-coffee-top {
+	position: relative
+}
+.buy-coffee-top:after {
+	content: "";
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/buy-coffee-top.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 171px;
+	height: 170px;
+	position: absolute;
+	z-index: 1;
+	right: 30px;
+	top: -100px;
+}
+/*new arrival area*/
+
+.new-arrival-area {
+	position: relative
+}
+.new-arrival-area.pink-bg-bottom:after {
+	content: "";
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/product-top-bg.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 152px;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	bottom: -100px;
+	left: 0;
+	transform: rotate(180deg)
+}
+.new-arrival-area .popular-coffee-block {
+	margin: 0
+}
+.new-arrival-area .popular-coffee-block .card-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.stars-group {
+	margin: 0px;
+	padding: 0px;
+}
+.stars-group img {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+}
+.new-arrival-area .new-arrival-block .card-img {
+	box-shadow: 0px 2px 40px rgba(0,0,0,0.10);
+}
+.new-arrival-area .new-arrival-block .card-shop-btn {
+	position: absolute;
+	z-index: 1;
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	transform: translateY(80px);
+	transition: all ease-in-out 0.5s
+}
+.new-arrival-area .swiper {
+	/*overflow: visible*/
+}
+.new-arrival-area .swiper-slide:hover .card-shop-btn {
+	transform: translateY(0px);
+}
+.new-arrival-next,
+.new-arrival-prev {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border-color: #fff;
+	border-radius: 50rem;
+	border: 2px solid #fff;
+	top: 42%;
+}
+.new-arrival-next:hover:after,
+.new-arrival-prev:hover:after {
+	border-color: #fff;
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 50rem;
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-pink.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	font-size: 0;
+	align-items: center;
+	justify-content: center;
+}
+.new-arrival-prev:after,
+.new-arrival-next:after {
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	font-size: 0;
+	align-items: center;
+	justify-content: center;
+}
+.new-arrival-next:after {
+	transform: rotate(180deg);
+}
+.new-arrival-prev {
+	left: 30px;
+}
+.new-arrival-next {
+	right: 30px;
+}
+.subscribe-area {
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/subscribe-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	min-height:900px;
+	
+}
+.subscribe-area .subscribe-block-cont {padding-bottom:100px;}
+
+/*How It Works css start*/
+.howwork-area {
+	padding: 50px 0;
+	position: relative
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block {
+	display: flex;
+/* 	padding: 60px 0; */
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block .space {
+	padding: 60px 50px;
+	position:relative
+}
+.howwork-area .howwork-timeline-area {
+	margin:0 auto;
+	position: relative;
+	max-width:1170px;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline {
+	margin: 0;
+}
+.howwork-area .howwork-timeline-area .timeline-line {
+	width: 2px;
+	height: 100% !important;
+	background-color: #FFC0CB20;
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	top: 0px;
+	left: auto;
+  	margin: 0 auto;
+}
+.howwork-area .howwork-timeline-area .timeline-line .timeline-line-on {
+	content: "";
+	width: 24px;
+	height: 24px;
+	border-radius: 50rem;
+	background-color: #fff;
+	position: absolute;
+	z-index: 1;
+	left: -10px;
+	top: 80px;
+	transition: all ease 0.5s;
+	opacity: 0;
+	transform:translateY(-60px);
+	box-shadow:0px 2px 11px rgba(0,0,0,0.25);
+}
+.howwork-area .howwork-timeline-area .timeline-line .timeline-line-on::after {
+	content: "";
+	width: 14px;
+	height: 14px;
+	border-radius: 50rem;
+	background-color: #FFC0CB;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	transition: all ease 0.5s;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block.active .timeline-line { background-color: #FFC0CB; }
+.howwork-area .howwork-timeline-area .howwork-timeline-block.active .timeline-line .timeline-line-on {
+	transition: all ease 0.5s;
+	transform:translateY(0px);
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block:nth-child(even) .timeline-line {
+	right: auto;
+  left: -2px;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block:nth-child(odd) .heading-sm,
+.howwork-area .howwork-timeline-area .howwork-timeline-block:nth-child(odd) .text{
+	text-align:right
+}
+
+.howwork-area .howwork-timeline-area .howwork-timeline-block:nth-child(even) .count-no  { text-align:right }
+.howwork-area .howwork-timeline-area .howwork-timeline-block .timeline-icon {
+	margin-top: 60px;
+}
+.text-right {
+	text-align: right
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block .heading-sm {
+	font-size: 26px;
+	margin: 0;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block .text {
+	color: #868686;
+	margin: 0;
+	font-size:18px;
+	line-height:28px;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block .count-no {
+	color: #121212;
+	font-size: 50px;
+	font-family: "Racing Sans One", Sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	margin: 0;
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block.active .timeline-line-on {
+	opacity: 1
+}
+.howwork-area .howwork-timeline-area .howwork-timeline-block.active .count-no,
+.howwork-area .howwork-timeline-area .howwork-timeline-block.active .heading-sm  {
+}
+/*How It Works css end*/
+
+.newsletter-area {
+	background-color:#000000;
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/newsletter-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height:480px;
+	
+}
+.newsletter-area .newsletter-block-cont .newsletter-form-block .form-control { border-radius:5px 0 0 5px; background-color:#ffffff20; border:0; color:#ffffff }
+.newsletter-area .newsletter-block-cont .newsletter-form-block .form-control::placeholder { opacity:1; color:#ffffff }
+.newsletter-area .newsletter-block-cont .newsletter-form-block .form-control:focus { outline:none; box-shadow:none }
+.newsletter-area .newsletter-block-cont .newsletter-form-block .btn { box-shadow:none; flex-shrink: 0; border-radius:0 5px 5px 0; }
+
+
+
+.our-review-area {
+	position: relative
+}
+.our-review-area .our-review-slider {
+	padding: 100px 0
+}
+.our-review-area .our-review-block .card {
+	background-color: #ffffff;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.10);
+	border-radius: 40px;
+}
+.our-review-area .our-review-block .card .card-body {
+	padding: 40px;
+}
+.our-review-area .our-review-block .card .card-body .card-text-lg {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: 600
+}
+.our-review-area .swiper-slide.swiper-slide-active .card {
+	background-color: #FFC0CB;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0);
+}
+.our-review-area .swiper-slide.swiper-slide-active .card .card-footer {
+	border-top-color: #fff !important
+}
+.our-review-area .our-review-block .card .card-footer {
+	padding: 17px 40px;
+}
+.our-review-area .our-review-block .card .card-footer {
+	border-top-color: #FFC0CB !important
+}
+.our-review-next,
+.our-review-prev {
+	display: flex;
+	width: 60px;
+	height: 60px;
+	background-color: transparent;
+	border-color: #FFC0CB;
+	border-radius: 50rem;
+	border: 2px solid #FFC0CB;
+	top: 42%;
+}
+.our-review-next:hover:after,
+.our-review-prev:hover:after {
+	background-color: #FFC0CB;
+	border-color: transparent;
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-white.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50rem;
+}
+.our-review-prev:after,
+.our-review-next:after {
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-pink.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	display: flex;
+	width: 60px;
+	height: 60px;
+	font-size: 0;
+	align-items: center;
+	justify-content: center;
+}
+.our-review-next:after {
+	transform: rotate(180deg);
+}
+.our-review-prev {
+	left: 0px;
+}
+.our-review-next {
+	right: 0px;
+}
+
+.instagram-area { position:relative; padding-top:150px !important; padding-bottom:150px !important }
+.instagram-area:after { content:""; width:100%; height:270px; background-color:#FFC0CB; position:absolute; z-index:0; bottom:0; left:0 }
+.instagram-area .instagram-block-area { position:relative; z-index:1; }
+.instagram-area hgroup { max-width:615px; }
+.instagram-area hgroup p { font-size:18px; line-height:28px; }
+.instagram-area .instagram-block-cont { margin-top:60px; }
+
+@media screen and (max-width:1680px) {
+.container {
+	max-width: 1170px;
+}
+}
+@media screen and (max-width:1280px) {
+.popular-coffee-prev,
+.new-arrival-prev {
+	left: 5px;
+}
+.popular-coffee-next,
+.new-arrival-next {
+	right: 5px;
+}
+}
+ @media screen and (max-width:1200px) {
+.hero-area {
+	min-height: 700px;
+}     
+     .heading-lg {
+	font-size: 40px;
+	line-height: 62px;
+}
+.heading-sm {
+	font-size: 36px;
+    line-height: 50px;
+}
+.text {
+	font-size: 18px;
+	line-height: 36px;
+}
+.header-main-sec .header-logo img {
+	width: 220px;
+}
+section.space-py, .space-py {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+section.instagram-area {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+.instagram-area::after {
+	height: 130px;
+}
+.subscribe-area {
+	min-height: 700px;
+}
+.subscribe-area .subscribe-block-cont {
+	padding-bottom: 40px;
+}
+.newsletter-area {
+	min-height: 380px;
+    align-items: center;
+}
+.new-arrival-next, .new-arrival-prev {
+	border-color: #ffc0cb;
+}
+.new-arrival-prev::after, .new-arrival-next::after {
+	background-image: url(https://ujoau.nimsite.uk/wp-content/uploads/2024/09/slider-arrow-pink.svg);
+}
+.new-arrival-next, .new-arrival-prev,
+.popular-coffee-next, .popular-coffee-prev {
+	top: 40%;
+}
+ }
+ @media screen and (max-width:1024px) {
+.container-fluid.px-5,
+.popular-coffee-area > .container-fluid.px-5 {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.header-main-sec .header-logo img {
+	width: 120px;
+}
+.header-main-sec .navbar-nav .nav-link {
+	padding-left: 30px;
+}
+.hero-area {
+	padding-bottom: 40px;
+}
+
+}
+@media screen and (max-width:991px) {
+.header-main-sec .navbar-nav .nav-link {
+	color: #ffffff;
+}
+.header-main-sec .navbar-nav .nav-link.active,
+.header-main-sec .navbar-nav .nav-link.active:hover,
+.header-main-sec .navbar-nav .nav-link:hover {
+	color: #ffffff;
+}
+.header-main-sec .navbar-nav .nav-link a {
+	color: #fff;
+}
+.header-main-sec .navbar-nav .nav-link {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.header-main-sec .navbar-nav {
+	padding: 10px;
+}
+.header-main-sec .navbar .navbar-collapse {
+	max-height: 450px;
+	overflow: auto;
+	background: #FFC0CB;
+	text-align: left;
+	padding: 0px;
+	margin-top: 10px;
+}
+
+}
+@media screen and (max-width:767px) {
+.heading-lg {
+	font-size: 30px;
+	line-height: 40px;
+}
+.heading-sm {
+	font-size: 26px;
+}
+.text-lg {
+	font-size: 16px;
+	line-height: 26px;
+}
+.heading-xxsm {
+	font-size: 20px;
+}
+.heading-xxxsm {
+	font-size: 18px;
+}
+.button-block {
+	flex-wrap: wrap;
+}
+.button-block > .btn {
+	margin-right: 0px;
+	margin-top: 20px;
+}
+}
